@@ -28,7 +28,11 @@ const ChatContainer = ({ selectedUser, setSelectedUser }) => {
         />
       </div>
       <div className="flex flex-col h-[calc(100%-120px)] overflow-y-scroll p-3 pb-6">
-         {/* {messagesDummyData} */}
+         {messagesDummyData.map((msg,index)=>(
+          <div key={index}>
+             
+          </div>
+         ))}
       </div>
     </div>
   ) : (
