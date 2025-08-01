@@ -13,6 +13,8 @@ app.use(cors());
 
 app.use("/api/status",(req,res)=>res.send("Server is live"));
 
+app.use("/api/auth")
+
 await connectDB();
 
 const PORT = process.env.PORT || 5000;
